@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillScan AI — Results</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body class="page-result">
+
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">SkillScan<em>AI</em></span>
+    </a>
+    <div class="header-badge">Scan Complete</div>
+  </header>
+
+  <main class="result-main">
+
+    <div class="result-header">
+      <div class="eyebrow">Your SkillScan Report</div>
+      <h2 class="result-title">Scan Complete</h2>
+    </div>
+
+    <!-- Score Dial -->
+    <div class="score-section">
+      <div class="score-dial" id="score-dial">
+        <svg class="dial-svg" viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="80" class="dial-bg" />
+          <circle cx="100" cy="100" r="80" class="dial-fill" id="dial-circle" />
+        </svg>
+        <div class="dial-inner">
+          <span class="dial-value" id="score-display">–</span>
+          <span class="dial-label">/ 10</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Badge -->
+    <div class="category-block" id="category-block">
+      <div class="category-badge" id="category-badge">–</div>
+      <p class="category-desc" id="category-desc">Analyzing your responses…</p>
+    </div>
+
+    <!-- Breakdown -->
+    <div class="breakdown-grid" id="breakdown-grid">
+      <!-- JS injects bars -->
+    </div>
+
+    <!-- Feedback -->
+    <div class="feedback-card" id="feedback-card">
+      <h3 class="feedback-title">AI Feedback</h3>
+      <p class="feedback-text" id="feedback-text">–</p>
+    </div>
+
+    <!-- Actions -->
+    <div class="result-actions">
+      <a href="index.html" class="btn-secondary">Retake Interview</a>
+      <button class="btn-primary" onclick="window.print()">
+        <span>Download Report</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </button>
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

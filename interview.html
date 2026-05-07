@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillScan AI — Interview</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body class="page-interview">
+
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">⬡</span>
+      <span class="logo-text">SkillScan<em>AI</em></span>
+    </a>
+    <div class="header-badge live-badge">
+      <span class="pulse-dot"></span> Live Session
+    </div>
+  </header>
+
+  <main class="interview-main">
+
+    <!-- Progress -->
+    <div class="progress-track">
+      <div class="progress-labels">
+        <span id="question-counter">Question 1 of 5</span>
+        <span id="progress-pct">20%</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progress-fill" style="width: 20%;"></div>
+      </div>
+    </div>
+
+    <!-- Question Card -->
+    <div class="question-card" id="question-card">
+      <div class="q-category" id="q-category">Technical Skills</div>
+      <p class="q-text" id="q-text">Loading question…</p>
+
+      <div class="answer-zone" id="answer-zone">
+        <div class="waveform" id="waveform">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <p class="recording-status" id="recording-status">Press the button to simulate your answer</p>
+      </div>
+
+      <div class="interview-actions">
+        <button class="btn-record" id="record-btn">
+          <span class="btn-record-icon" id="record-icon">●</span>
+          <span id="record-label">Record Answer</span>
+        </button>
+        <button class="btn-next" id="next-btn" disabled>
+          Next <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Tip -->
+    <div class="interview-tip" id="interview-tip">
+      <span class="tip-icon">💡</span>
+      <span id="tip-text">Speak clearly and structure your answer: Situation → Action → Result.</span>
+    </div>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
